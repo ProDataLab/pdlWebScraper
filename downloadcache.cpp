@@ -1,10 +1,5 @@
 #include "downloadcache.h"
-<<<<<<< HEAD
 
-DownloadCache::DownloadCache(QObject *parent) :
-    QObject(parent)
-{
-=======
 #include <stdio.h>
 #include <QNetworkReply>
 #include <QNetworkRequest>
@@ -117,5 +112,4 @@ void DownloadCache::onSslErrors(QNetworkReply *_reply, QList<QSslError> errorLis
         errorString += error.errorString();
     }
     _reply->ignoreSslErrors();
->>>>>>> download-cache
 }

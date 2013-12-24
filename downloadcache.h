@@ -2,8 +2,6 @@
 #define DOWNLOADCACHE_H
 
 #include <QObject>
-<<<<<<< HEAD
-=======
 #include <QString>
 #include <QStringList>
 #include <QMap>
@@ -16,7 +14,6 @@
 
 class QNetworkReply;
 class QAuthenticator;
->>>>>>> download-cache
 
 class DownloadCache : public QObject
 {
@@ -24,12 +21,7 @@ class DownloadCache : public QObject
 public:
     explicit DownloadCache(QObject *parent = 0);
 
-<<<<<<< HEAD
-signals:
 
-public slots:
-
-=======
     void toStdout(const QString & urlPath);
     void toStdout(const QStringList & urlPathList);
 
@@ -63,7 +55,6 @@ private:
     QByteArray buffer;
     QString userName;
     QString password;
->>>>>>> download-cache
 };
 
 #endif // DOWNLOADCACHE_H
