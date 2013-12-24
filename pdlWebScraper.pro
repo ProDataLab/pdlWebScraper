@@ -4,7 +4,11 @@
 #
 #-------------------------------------------------
 
+<<<<<<< HEAD
 QT       += core
+=======
+QT       += core network
+>>>>>>> download-cache
 
 QT       -= gui
 
@@ -14,5 +18,13 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+<<<<<<< HEAD
 
 SOURCES += main.cpp
+=======
+SOURCES += main.cpp \
+    downloadcache.cpp
+
+HEADERS += \
+    downloadcache.h
+>>>>>>> download-cache
